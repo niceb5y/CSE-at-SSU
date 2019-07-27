@@ -1,0 +1,10 @@
+BasedOnStyle: LLVM
+BreakBeforeBraces: Custom
+BraceWrapping:
+  AfterClass: true
+  AfterFunction: true
+  AfterNamespace: true
+  BeforeElse: true
+Language: Cpp
+SortIncludes: false
+AllowShortFunctionsOnASingleLine: false
