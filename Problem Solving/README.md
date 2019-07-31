@@ -24,7 +24,7 @@
 
 ## Assignments 5
 
-- 3114 사과와 바나나 [\[Problem\]](https://www.acmicpc.net/problem/3114) [\[Source Code\]](https://github.com/niceb5y/algorithm-study/blob/niceb5y/119/main.cpp)
+- 3114 사과와 바나나 [\[Problem\]](https://www.acmicpc.net/problem/3114) [\[Source Code\]](https://github.com/niceb5y/algorithm-study/blob/niceb5y/119/main.cpp) [\[Slide\]](https://github.com/niceb5y/CSE-at-SSU/tree/master/Problem%20Solving/slide/%EC%82%AC%EA%B3%BC%EC%99%80%20%EB%B0%94%EB%82%98%EB%82%98.pdf)
 - 1937 욕심쟁이 판다 [\[Problem\]](https://www.acmicpc.net/problem/1937) [\[Source Code\]](https://github.com/niceb5y/algorithm-study/blob/niceb5y/118/main.cpp)
 
 ---
