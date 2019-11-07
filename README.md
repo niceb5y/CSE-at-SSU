@@ -4,6 +4,11 @@ _Archive of my university life_
 
 ## Courses
 
-### [Linux System Programming](https://github.com/niceb5y/CSE-at-SSU/tree/master/Linux%20System%20Programming)
+### 2015
 
-### [Problem Solving](https://github.com/niceb5y/CSE-at-SSU/tree/master/Problem%20Solving)
+- [Data Structure](https://github.com/niceb5y/CSE-at-SSU/tree/master/Data%20Structure)
+
+### 2019
+
+- [Linux System Programming](https://github.com/niceb5y/CSE-at-SSU/tree/master/Linux%20System%20Programming)
+- [Problem Solving](https://github.com/niceb5y/CSE-at-SSU/tree/master/Problem%20Solving)
