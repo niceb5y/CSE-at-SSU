@@ -20,16 +20,14 @@ int main(int argc, char *argv[])
   if (link(argv[1], argv[2]) < 0) {
     fprintf(stderr, "link error\n");
     exit(1);
-  }
-  else
+  } else
     printf("step1 passed.\n");
 
   if (remove(argv[1]) < 0) {
     fprintf(stderr, "remove error\n");
     remove(argv[2]);
     exit(1);
-  }
-  else
+  } else
     printf("step2 passed.\n");
 
   printf("Success!\n");

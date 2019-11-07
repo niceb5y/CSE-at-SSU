@@ -23,8 +23,7 @@ int main(int argc, char *argv[])
   if ((fd = open(argv[1], O_RDONLY)) < 0) {
     fprintf(stderr, "first open error for %s\n", argv[1]);
     exit(1);
-  }
-  else
+  } else
     close(fd);
 
   if (rename(argv[1], argv[2]) < 0) {

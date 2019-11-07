@@ -38,8 +38,7 @@ int main(void)
   if ((length = read(fd, buf, sizeof(buf))) < 0) {
     fprintf(stderr, "buf read error\n");
     exit(1);
-  }
-  else
+  } else
     buf[length] = 0;
 
   printf("%s\n", buf);
@@ -48,8 +47,7 @@ int main(void)
   if ((fd = open(fname, O_RDWR)) < 0) {
     fprintf(stderr, "second open error for %s\n", fname);
     exit(1);
-  }
-  else
+  } else
     close(fd);
 
   gettimeofday(&end_t, NULL);

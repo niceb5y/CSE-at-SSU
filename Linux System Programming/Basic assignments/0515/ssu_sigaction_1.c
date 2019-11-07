@@ -3,10 +3,7 @@
 #include <unistd.h>
 #include <signal.h>
 
-void ssu_signal_handler(int signo)
-{
-  printf("ssu_signal_handler control\n");
-}
+void ssu_signal_handler(int signo) { printf("ssu_signal_handler control\n"); }
 
 int main(void)
 {

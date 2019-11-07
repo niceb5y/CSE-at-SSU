@@ -24,10 +24,7 @@ int main(void)
   exit(0);
 }
 
-void ssu_out(void)
-{
-  printf("atexit succeeded!\n");
-}
+void ssu_out(void) { printf("atexit succeeded!\n"); }
 
 void ssu_runtime(struct timeval *begin_t, struct timeval *end_t)
 {

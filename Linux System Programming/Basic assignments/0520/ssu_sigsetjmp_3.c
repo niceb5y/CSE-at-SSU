@@ -22,8 +22,7 @@ int main(void)
   if (ret == 0) {
     act_sig1.sa_handler = ssu_signal_handler1;
     sigaction(SIGINT, &act_sig1, NULL);
-  }
-  else if (ret == 3)
+  } else if (ret == 3)
     printf("----------------\n");
 
   printf("Starting\n");

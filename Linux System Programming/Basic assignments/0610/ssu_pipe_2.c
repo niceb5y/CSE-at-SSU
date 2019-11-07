@@ -18,14 +18,12 @@ int main(void)
   if ((pid = fork()) < 0) {
     fprintf(stderr, "fork error\n");
     exit(1);
-  }
-  else if (pid > 0) {
+  } else if (pid > 0) {
     printf(" PARENT: writing to the pipe \n");
     write(pipe_fd[1], "OSLAB", 6);
     printf(" PARENT wating \n ");
     wait(NULL);
-  }
-  else {
+  } else {
     printf(" CHILD: reading from pipe \n");
     read(pipe_fd[0], buf, 6);
     printf(" CHILD: read \"%s \" \n", buf);

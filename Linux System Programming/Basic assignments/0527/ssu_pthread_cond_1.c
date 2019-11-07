@@ -64,8 +64,7 @@ void *ssu_thread1(void *arg)
       t2++;
       count++;
       printf("Thread 1 : %d\n", t1);
-    }
-    else if (count % 2 == 0) {
+    } else if (count % 2 == 0) {
       t1 += t2;
       count++;
       printf("Thread 1 : %d\n", t1);
@@ -95,8 +94,7 @@ void *ssu_thread2(void *arg)
     if (count == 1) {
       count++;
       printf("Thread 2 : %d\n", t2);
-    }
-    else if (count % 2 == 1) {
+    } else if (count % 2 == 1) {
       t2 += t1;
       count++;
       printf("Thread 2 : %d\n", t2);

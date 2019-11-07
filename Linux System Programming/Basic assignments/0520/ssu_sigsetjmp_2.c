@@ -90,7 +90,4 @@ static void ssu_func(int signo)
   siglongjmp(jump_buf, 1);
 }
 
-static void ssu_alarm(int signo)
-{
-  ssu_mask("in ssu_alarm: ");
-}
+static void ssu_alarm(int signo) { ssu_mask("in ssu_alarm: "); }

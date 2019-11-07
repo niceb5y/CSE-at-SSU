@@ -30,8 +30,7 @@ int main(void)
   if ((fd = creat(fname, 0666)) < 0) {
     fprintf(stderr, "creat error for %s\n", fname);
     exit(1);
-  }
-  else {
+  } else {
     printf("Success!\nFilename : %s\nDescriptor : %d\n", fname, fd);
     close(fd);
   }

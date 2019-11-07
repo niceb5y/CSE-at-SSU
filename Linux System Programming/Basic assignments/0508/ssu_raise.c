@@ -23,12 +23,6 @@ int main(void)
   exit(0);
 }
 
-void ssu_signal_handler1(int signo)
-{
-  printf("SIGINT 시그널 발생\n");
-}
+void ssu_signal_handler1(int signo) { printf("SIGINT 시그널 발생\n"); }
 
-void ssu_signal_handler2(int signo)
-{
-  printf("SIGUSR1 시그널 발생\n");
-}
+void ssu_signal_handler2(int signo) { printf("SIGUSR1 시그널 발생\n"); }

@@ -18,8 +18,7 @@ int main(void)
   if ((pid = fork()) < 0) {
     fprintf(stderr, "fork error\n");
     exit(1);
-  }
-  else if (pid == 0)
+  } else if (pid == 0)
     ssu_charactatime("output from child\n");
   else
     ssu_charactatime("output from parent\n");

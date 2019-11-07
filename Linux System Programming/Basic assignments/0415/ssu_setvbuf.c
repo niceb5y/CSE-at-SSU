@@ -74,8 +74,7 @@ void ssu_setbuf(FILE *fp, char *buf)
   if (buf == NULL) {
     mode = _IONBF;
     size = 0;
-  }
-  else
+  } else
     size = BUFFER_SIZE;
 
   setvbuf(fp, buf, mode, size);

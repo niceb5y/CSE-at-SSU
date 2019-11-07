@@ -9,8 +9,7 @@ int main(void)
   if ((pid = fork()) < 0) {
     fprintf(stderr, "fork error\n");
     exit(1);
-  }
-  else if (pid != 0)
+  } else if (pid != 0)
     exit(1);
 
   printf("before pid = %d. sid = %d\n", getpid(), getsid(getpid()));

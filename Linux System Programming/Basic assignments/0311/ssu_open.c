@@ -30,8 +30,7 @@ int main(void)
   if ((fd = open(fname, O_RDONLY)) < 0) {
     fprintf(stderr, "open error for %s\n", fname);
     exit(1);
-  }
-  else
+  } else
     printf("Success!\nFilename : %s\nDescriptor : %d\n", fname, fd);
 
   gettimeofday(&end_t, NULL);

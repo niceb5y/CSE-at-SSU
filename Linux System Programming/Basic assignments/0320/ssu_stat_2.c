@@ -44,8 +44,7 @@ void ssu_checkfile(char *fname, time_t *time)
   if (stat(fname, &statbuf) < 0) {
     fprintf(stderr, "Warning : ssu_checkfile() error!\n");
     exit(1);
-  }
-  else if (statbuf.st_mtime != *time) {
+  } else if (statbuf.st_mtime != *time) {
     printf("Warning %s was modified!.\n", fname);
     *time = statbuf.st_mtime;
   }

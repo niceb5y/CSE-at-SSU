@@ -19,12 +19,10 @@ int main(int argc, char *argv[])
   if ((pid = fork()) > 0) {
     first = 'A';
     last = 'Z';
-  }
-  else if (pid == 0) {
+  } else if (pid == 0) {
     first = 'a';
     last = 'z';
-  }
-  else {
+  } else {
     fprintf(stderr, "%s\n", argv[0]);
     exit(1);
   }

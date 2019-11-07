@@ -74,7 +74,4 @@ void ssu_print_mask(const char *str)
   errno = err_num;
 }
 
-static void ssu_func(int signo)
-{
-  ssu_print_mask("\nin ssu_func: ");
-}
+static void ssu_func(int signo) { ssu_print_mask("\nin ssu_func: "); }

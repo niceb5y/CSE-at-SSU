@@ -16,8 +16,7 @@ int main(void)
   if (sid_stdin == -1) {
     fprintf(stderr, "tcgetsid error\n");
     exit(1);
-  }
-  else
+  } else
     printf("Session Leader for stdin: %d\n", sid_stdin);
 
   sid_stdout = tcgetsid(STDOUT_FILENO);
@@ -25,8 +24,7 @@ int main(void)
   if (sid_stdout == -1) {
     fprintf(stderr, "tcgetsid error\n");
     exit(1);
-  }
-  else
+  } else
     printf("Session Leader for stdout: %d\n", sid_stdout);
 
   sid_stderr = tcgetsid(STDERR_FILENO);
@@ -34,8 +32,7 @@ int main(void)
   if (sid_stderr == -1) {
     fprintf(stderr, "tcgetsid error\n");
     exit(1);
-  }
-  else
+  } else
     printf("Session Leader for stderr: %d\n", sid_stderr);
 
   exit(0);

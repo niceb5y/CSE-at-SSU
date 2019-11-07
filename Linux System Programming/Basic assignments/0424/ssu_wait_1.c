@@ -20,8 +20,7 @@ int main(void)
   if ((pid = fork()) < 0) {
     fprintf(stderr, "fork error\n");
     exit(1);
-  }
-  else if (pid == 0)
+  } else if (pid == 0)
     exit(7);
 
   if (wait(&status) != pid) {
@@ -34,8 +33,7 @@ int main(void)
   if ((pid = fork()) < 0) {
     fprintf(stderr, "fork error\n");
     exit(1);
-  }
-  else if (pid == 0)
+  } else if (pid == 0)
     abort();
 
   if (wait(&status) != pid) {
@@ -48,8 +46,7 @@ int main(void)
   if ((pid = fork()) < 0) {
     fprintf(stderr, "fork error\n");
     exit(1);
-  }
-  else if (pid == 0)
+  } else if (pid == 0)
     status /= 0;
 
   if (wait(&status) != pid) {

@@ -19,12 +19,10 @@ int main(void)
   if ((pid = fork()) < 0) {
     fprintf(stderr, "fork error\n");
     exit(1);
-  }
-  else if (pid > 0) {
+  } else if (pid > 0) {
     sleep(3);
     exit(0);
-  }
-  else {
+  } else {
     ssu_print_ids("child");
     signal(SIGHUP, ssu_sig_hup);
     kill(getpid(), SIGTSTP);

@@ -19,8 +19,7 @@ int main(void)
   if ((pid = fork()) < 0) {
     fprintf(stderr, "fork error\n");
     exit(1);
-  }
-  else if (pid == 0) {
+  } else if (pid == 0) {
     close(pipe_fd[0]);
 
     while (1) {
@@ -29,8 +28,7 @@ int main(void)
       write(pipe_fd[1], buf, strlen(buf));
       sleep(1);
     }
-  }
-  else {
+  } else {
     close(pipe_fd[1]);
 
     while (1) {

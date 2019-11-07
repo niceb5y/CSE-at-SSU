@@ -18,8 +18,7 @@ int main(void)
   if (fopen(fname, mode) == NULL) {
     fprintf(stderr, "fopen error for %s\n", fname);
     exit(1);
-  }
-  else
+  } else
     printf("Success!\nFilename: <%s>, mode: <%s>\n", fname, mode);
 
   gettimeofday(&end_t, NULL);

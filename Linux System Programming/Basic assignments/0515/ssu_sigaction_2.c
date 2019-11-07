@@ -18,16 +18,14 @@ int main(void)
   if (sigaction(SIGUSR1, &sig_act, NULL) != 0) {
     fprintf(stderr, "sigaction() error\n");
     exit(1);
-  }
-  else {
+  } else {
     sigemptyset(&sig_set);
     sigaddset(&sig_set, SIGUSR1);
 
     if (sigprocmask(SIG_SETMASK, &sig_set, NULL) != 0) {
       fprintf(stderr, "sigprocmask() error\n");
       exit(1);
-    }
-    else {
+    } else {
       printf("SIGUSR1 signals are now blocked\n");
       kill(getpid(), SIGUSR1);
       printf("after kill()\n");

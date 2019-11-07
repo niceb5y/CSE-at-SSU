@@ -31,8 +31,7 @@ int ssu_daemon_init(void)
   if ((pid = fork()) < 0) {
     fprintf(stderr, "fork error\n");
     exit(1);
-  }
-  else if (pid != 0)
+  } else if (pid != 0)
     exit(0);
 
   pid = getpid();

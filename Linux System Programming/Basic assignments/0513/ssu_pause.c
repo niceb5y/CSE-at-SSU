@@ -20,7 +20,4 @@ int main(void)
   exit(0);
 }
 
-void ssu_alarm(int signo)
-{
-  printf("alarm..!!!\n");
-}
+void ssu_alarm(int signo) { printf("alarm..!!!\n"); }

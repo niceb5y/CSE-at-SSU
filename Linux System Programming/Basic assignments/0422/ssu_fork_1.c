@@ -30,12 +30,10 @@ int main(void)
   if ((pid = fork()) < 0) {
     fprintf(stderr, "fork error\n");
     exit(1);
-  }
-  else if (pid == 0) {
+  } else if (pid == 0) {
     glob_val++;
     loc_val++;
-  }
-  else
+  } else
     sleep(3);
 
   printf("pid = %d, glob_val = %d, loc_val = %d\n", getpid(), glob_val,

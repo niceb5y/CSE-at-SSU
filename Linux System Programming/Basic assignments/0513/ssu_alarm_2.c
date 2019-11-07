@@ -29,7 +29,4 @@ int main(void)
   exit(0);
 }
 
-static void ssu_alarm(int signo)
-{
-  printf("ssu_alarm() called!\n");
-}
+static void ssu_alarm(int signo) { printf("ssu_alarm() called!\n"); }

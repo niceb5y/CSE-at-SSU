@@ -18,8 +18,7 @@ int main(void)
   if ((fp = fopen(fname, "r")) == NULL) {
     fprintf(stderr, "fopen error for %s\n", fname);
     exit(1);
-  }
-  else {
+  } else {
     printf("Success!\n");
     printf("Opening \"%s\"in \"r\" mode!\n", fname);
   }
